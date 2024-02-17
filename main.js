@@ -1,11 +1,25 @@
+var puntos = 1000000
 function dunction() {
     if (puntos == 0 ) {
         document.getElementById("k").innerHTML = "ganastee!!!!! felicidadess"
     }
-    puntos -= 1
+    var dificult = document.getElementById("seleccionardifi").value
+    if (dificult == "easy" ) {
+        puntos -= 20
+    }
+    else if (dificult == "normal") {
+        puntos -= 1
+    }
+    else if (dificult == "hard") {
+        puntos -= 0.5
+    }
+    
     document.getElementById("hello").innerHTML = puntos
     
 }
 
-var puntos = 1000000
+
+
+
+
 
