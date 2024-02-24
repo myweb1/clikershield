@@ -1,5 +1,6 @@
 var puntos = 1000000
 function dunction() {
+
     if (puntos == 0 ) {
         document.getElementById("k").innerHTML = "ganastee!!!!! felicidadess"
     }
@@ -17,9 +18,8 @@ function dunction() {
     document.getElementById("hello").innerHTML = puntos
     
 }
-
-
-
-
-
-
+window.addEventListener("keydown", function entermalo(enter) {
+    if ( enter.keyCode == "13" ) {
+        enter.preventDefault()
+    }
+})
