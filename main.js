@@ -2,7 +2,11 @@ var puntos = 1000000
 function dunction() {
 
     if (puntos == 0 ) {
-        document.getElementById("k").innerHTML = "ganastee!!!!! felicidadess"
+        document.getElementById("k").innerHTML = "ganastee!!!!! felicidadess ahora intenta llegar a -1000000"
+    }
+     
+    if (puntos == -1000000) {
+        document.getElementById("o").innerHTML = "llegaste a -1000000 completaste el juego al 100%"
     }
     var dificult = document.getElementById("seleccionardifi").value
     if (dificult == "easy" ) {
@@ -14,7 +18,7 @@ function dunction() {
     else if (dificult == "hard") {
         puntos -= 0.5
     }
-    
+   
     document.getElementById("hello").innerHTML = puntos
     
 }
